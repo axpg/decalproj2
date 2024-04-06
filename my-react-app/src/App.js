@@ -1,7 +1,7 @@
-import './Styling/App.css';
+import './App.css';
 import Home from './Home.js'
 import About from './About.js'
-import Videos from './Videos.js'
+import Videos from './Components/Videos.js'
 import Members from './Members.js'
 
 function App() {
