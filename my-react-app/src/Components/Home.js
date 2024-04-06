@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="container">
       <header>
-        <img src="https://yt3.googleusercontent.com/kXHxLMVZpKSFTdvMjRW1nYSGclKfi7zmQa8Wl3l3ipBqh-Qa6Ruuuwg7U4I4sl9gd3u24-3J3Fg=s176-c-k-c0x00ffffff-no-rj" alt="Noteworthy A Cappella Logo" className="logo" />
+        <img src="noteworthy.png" alt="Noteworthy A Cappella Logo" className="logo" />
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
