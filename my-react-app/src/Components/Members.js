@@ -1,10 +1,13 @@
 import React from 'react';
+import MemberList from './MemberList';
+import membersData from './membersData'; 
 
 function Members() {
   return (
-    <header>
+    <div>
       <h1>Members</h1>
-    </header>
+      <MemberList members={membersData} />
+    </div>
   );
 }
 
