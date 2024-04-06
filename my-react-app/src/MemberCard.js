@@ -3,7 +3,7 @@ import React from 'react';
 function MemberCard({ member }) {
   return (
     <div className="member-card">
-      <img src={require(`./Eddie.jpeg`).default} alt="Test image" /> 
+      <img src={require(`../images/${member.image}`).default} alt={member.name} /> 
       <h2>{member.name}</h2>
       <p><strong>Role:</strong> {member.role}</p>
       <p>{member.bio}</p>
