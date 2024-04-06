@@ -1,5 +1,8 @@
 import './App.css';
-import Header from './Home.js'
+import Home from './Home.js'
+import About from './About.js'
+import Videos from './Videos.js'
+import Members from './Members.js'
 
 function App() {
   return (
@@ -9,7 +12,6 @@ function App() {
       <Videos />
       <Members />
     </div>
-
   );
 }
 
