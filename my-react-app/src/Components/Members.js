@@ -1,6 +1,6 @@
 import React from 'react';
 import MemberList from './MemberList';
-import membersData from './membersData'; 
+import membersData from './MembersData'; 
 
 function Members() {
   return (
