@@ -8,7 +8,7 @@ const membersData = [
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
     {
-      image: require('./img/Ellington.jpeg').default,
+      image: require('./Ellington.jpeg').default,
       name: 'Ellington Chen',
       role: 'Co-Music Manager',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
