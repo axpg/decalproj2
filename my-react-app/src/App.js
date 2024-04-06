@@ -4,9 +4,6 @@ import About from './About.js'
 import Videos from './Videos.js'
 import Members from './Members.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Members from './Members';
 
 
 function App() {
