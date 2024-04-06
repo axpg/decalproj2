@@ -1,18 +1,17 @@
 import React from 'react';
 import './Home.css'; // Import CSS file for styling
-import { Link } from 'react-router-dom';
 
 function Home() {
   return (
     <div className="container">
       <header>
-        <img src="./noteworthy.png" alt="Noteworthy A Cappella Logo" className="logo" />
+        <img src="noteworthy.png" alt="Noteworthy A Cappella Logo" className="logo" />
         <nav>
           <ul>
-            {/* Replace <a> tags with <Link> components */}
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/members">Contact</Link></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Noteworthy</a></li>
+            <li><a href="#">People of Noteworthy</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
