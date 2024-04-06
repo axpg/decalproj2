@@ -1,10 +1,13 @@
 import './App.css';
-import Header from './Header.js'
+import Header from './Home.js'
 
 function App() {
   return (
     <div>
-      <Header />
+      <Home />
+      <About />
+      <Videos />
+      <Members />
     </div>
 
   );
