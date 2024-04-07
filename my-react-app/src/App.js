@@ -2,44 +2,28 @@ import Home from './Home.js'
 import About from './About.js'
 import Videos from './Videos.js'
 import Members from './Members.js'
-<<<<<<< HEAD
 import { useState } from 'react';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home')
+  const [currentPage, setCurrentPage] = useState('home');
+
   const renderPage = () => {
-    if (currentPage === 'About') {
+    switch (currentPage) {
+      case 'About':
         return <About />;
-    } else if (currentPage === 'Members') {
-        return <Members />; 
-    } else if (currentPage == 'Videos') {
-        return <Videos />; // Don't render anything extra
+      case 'Members':
+        return <Members />;
+      case 'Videos':
+        return <Videos />;
+      default:
+        return null;
     }
-    else {
-      return null;
-    }
-}
-return (
-  <div> 
-     {currentPage === 'home' && <Home setCurrentPage={setCurrentPage} />} 
-     {renderPage()} 
-  </div>
-);
-=======
+  };
 
-
-function App() {
   return (
-      <div>
-        
-        {/* Render your existing components here */}
-        <Home />
-        <About />
-        <Videos />
-        <Members />
-      </div>
+    <div>
+      {currentPage === 'home' && <Home setCurrentPage={setCurrentPage} />}
+      {renderPage()}
+    </div>
   );
->>>>>>> 339cf1971ff6db99eda605a8a1561f0ea0cec468
 }
-
-export default App;
