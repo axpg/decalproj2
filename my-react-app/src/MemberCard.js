@@ -1,4 +1,5 @@
 import React from 'react';
+import './Member.css';
 
 function MemberCard({ member }) {
   return (

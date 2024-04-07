@@ -1,4 +1,3 @@
-import './App.css';
 import Home from './Home.js'
 import About from './About.js'
 import Videos from './Videos.js'
