@@ -10,10 +10,9 @@ function Home() {
         <img src={NoteworthyPNG} alt="Noteworthy A Cappella Logo" className="logo" />
         <nav>
           <ul>
-            {/* Replace <a> tags with <Link> components */}
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/members">Contact</Link></li>
+          <li><button onClick={() => window.location.href = '/'}>Home</button></li>
+          <li><button onClick={() => window.location.href = '/about'}>About</button></li>
+          <li><button onClick={() => window.location.href = '/members'}>Members</button></li>
           </ul>
         </nav>
       </header>
