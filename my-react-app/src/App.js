@@ -2,6 +2,7 @@ import Home from './Home.js'
 import About from './About.js'
 import Videos from './Videos.js'
 import Members from './Members.js'
+<<<<<<< HEAD
 import { useState } from 'react';
 
 function App() {
@@ -24,6 +25,21 @@ return (
      {renderPage()} 
   </div>
 );
+=======
+
+
+function App() {
+  return (
+      <div>
+        
+        {/* Render your existing components here */}
+        <Home />
+        <About />
+        <Videos />
+        <Members />
+      </div>
+  );
+>>>>>>> 339cf1971ff6db99eda605a8a1561f0ea0cec468
 }
 
 export default App;
