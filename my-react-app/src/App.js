@@ -2,27 +2,28 @@ import Home from './Home.js'
 import About from './About.js'
 import Videos from './Videos.js'
 import Members from './Members.js'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import { useState } from 'react';
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/members" component={Members} />
-        </Routes>
-        
-        {/* Render your existing components here */}
-        <Home />
-        <About />
-        <Videos />
-        <Members />
-      </div>
-    </Router>
-  );
+  const [currentPage, setCurrentPage] = useState('home')
+  const renderPage = () => {
+    if (currentPage === 'About') {
+        return <About />;
+    } else if (currentPage === 'Members') {
+        return <Members />; 
+    } else if (currentPage == 'Videos') {
+        return <Videos />; // Don't render anything extra
+    }
+    else {
+      return null;
+    }
+}
+return (
+  <div> 
+     {currentPage === 'home' && <Home setCurrentPage={setCurrentPage} />} 
+     {renderPage()} 
+  </div>
+);
 }
 
 export default App;

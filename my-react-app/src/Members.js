@@ -5,7 +5,7 @@ import membersData from './MembersData';
 function Members() {
   return (
     <div>
-      <h1>Members</h1>
+      <h1>Our Members</h1>
       <MemberList members={membersData} />
     </div>
   );
