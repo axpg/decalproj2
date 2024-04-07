@@ -1,9 +1,3 @@
-import Home from './Home.js'
-import About from './About.js'
-import Videos from './Videos.js'
-import Members from './Members.js'
-import { useState } from 'react';
-
 import React, { useState } from 'react';
 import Home from './Home';
 import About from './About';
@@ -13,8 +7,13 @@ import Members from './Members';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
+  const handleClick = (page) => {
+    console.log('State updated:', page);
+    setCurrentPage(page);
+  };
+  
+
   const renderPage = () => {
-    console.log('Rendering page:', currentPage);
     switch (currentPage) {
       case 'About':
         return <About />;
@@ -27,14 +26,13 @@ function App() {
     }
   };
 
-  console.log('Current page:', currentPage);
-
   return (
     <div>
-      {currentPage === 'home' && <Home setCurrentPage={setCurrentPage} />}
+      {currentPage === 'home' && <Home setCurrentPage={handleClick} />}
       {renderPage()}
     </div>
   );
 }
 
 export default App;
+

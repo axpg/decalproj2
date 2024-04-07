@@ -1,17 +1,21 @@
 import React from 'react';
 import './Home.css'; // Import CSS file for styling
-import NoteworthyPNG from './noteworthy.png'
+import NoteworthyPNG from './noteworthy.png';
 
-function Home() {
+function Home({ setCurrentPage }) {
+  const handleClick = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <div className="container">
       <header>
         <img src={NoteworthyPNG} alt="Noteworthy A Cappella Logo" className="logo" />
         <nav>
           <ul>
-          <li><button onClick={() => window.location.href = '/'}>Home</button></li>
-          <li><button onClick={() => window.location.href = '/about'}>About</button></li>
-          <li><button onClick={() => window.location.href = '/members'}>Members</button></li>
+            <li><button onClick={() => handleClick('About')}>About</button></li>
+            <li><button onClick={() => handleClick('Videos')}>Videos</button></li>
+            <li><button onClick={() => handleClick('Members')}>Members</button></li>
           </ul>
         </nav>
       </header>
