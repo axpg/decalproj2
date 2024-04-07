@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css'; // Import CSS file for styling
 import NoteworthyPNG from './noteworthy.png'
-import { Link } from 'react-router-dom';
 
 function Home() {
   return (
