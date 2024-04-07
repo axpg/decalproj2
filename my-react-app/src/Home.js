@@ -1,12 +1,13 @@
 import React from 'react';
 import './Home.css'; // Import CSS file for styling
+import NoteworthyPNG from './noteworthy.png'
 import { Link } from 'react-router-dom';
 
 function Home() {
   return (
     <div className="container">
       <header>
-        <img src="./noteworthy.png" alt="Noteworthy A Cappella Logo" className="logo" />
+        <img src={NoteworthyPNG} alt="Noteworthy A Cappella Logo" className="logo" />
         <nav>
         <ul>
           <li><a href="#">Home</a></li>
