@@ -8,13 +8,13 @@ function Home() {
       <header>
         <img src="./noteworthy.png" alt="Noteworthy A Cappella Logo" className="logo" />
         <nav>
-          <ul>
-            {/* Replace <a> tags with <Link> components */}
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/members">Contact</Link></li>
-          </ul>
-        </nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
       </header>
       <main>
         <h1 className="group-name">Noteworthy A Cappella</h1>
