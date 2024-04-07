@@ -1,14 +1,16 @@
 // membersData.js
+import EddieImage from './Images/Eddie.jpeg'
+import EllingtonImage from './Images/Ellington.jpeg'
 
 const membersData = [
     {
-      image: 'Eddie.jpeg',
+      image: EddieImage,
       name: 'Eddie Cekici',
       role: 'Co-Business Manager',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
     {
-      image: "Ellington.jpeg",
+      image: EllingtonImage,
       name: 'Ellington Chen',
       role: 'Co-Music Manager',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
